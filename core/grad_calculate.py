@@ -54,7 +54,7 @@ def _normalization(data, axis=None, bot=False):
     return _norm
 
 
-class GradSift:
+class GradCalculate:
     def __init__(self, modules, num_classes):
         self.modules = [HookModule(module) for module in modules]
 
@@ -128,7 +128,7 @@ def main():
 
     modules = models.load_modules(model=model)
 
-    grad_sift = GradSift(modules=modules, num_classes=args.num_classes)
+    grad_calculate = GradCalculate(modules=modules, num_classes=args.num_classes)
 
     # ----------------------------------------
     # forward
@@ -139,9 +139,9 @@ def main():
         labels = labels.to(device)
         outputs = model(inputs)
 
-        grad_sift(outputs, labels)
+        grad_calculate(outputs, labels)
 
-    grad_sift.sift(result_path=args.grad_path, threshold=args.theta)
+    grad_calculate.sift(result_path=args.grad_path, threshold=args.theta)
 
 
 if __name__ == '__main__':

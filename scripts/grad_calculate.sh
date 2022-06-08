@@ -10,7 +10,7 @@ export data_path=${result_path}${exp_name}'/images_50'
 export grad_path=${result_path}${exp_name}'/grads_50'
 export theta=0.2
 export device_index='2'
-python core/grad_sift.py \
+python core/grad_calculate.py \
   --model_name ${model_name} \
   --data_name ${data_name} \
   --in_channels ${in_channels} \

@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 from torchvision import transforms
-from core.grad_sift import HookModule
+from core.grad_calculate import HookModule
 
 
 class GradConstraint:
