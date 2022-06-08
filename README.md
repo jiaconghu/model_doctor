@@ -1,8 +1,7 @@
 ## Model Doctor: A Simple Gradient Aggregation Strategy for Diagnosing andTreating CNN Classifiers
 
-----
-
 ![](framework.png)
+
 This is a PyTorch implementation of the [Model Doctor](https://arxiv.org/pdf/2112.04934.pdf):
 ```
 @article{feng2021model,
