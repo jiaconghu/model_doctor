@@ -7,7 +7,7 @@ This is a PyTorch implementation of the [Model Doctor](https://arxiv.org/pdf/211
 @article{feng2021model,
   title={Model Doctor: A Simple Gradient Aggregation Strategy for Diagnosing and Treating CNN Classifiers},
   author={Feng, Zunlei and Hu, Jiacong and Wu, Sai and Yu, Xiaotian and Song, Jie and Song, Mingli},
-  journal={arXiv preprint arXiv:2112.04934},
+  journal={AAAI},
   year={2021}
 }
 ```
