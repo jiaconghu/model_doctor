@@ -1,4 +1,4 @@
-## Model Doctor: A Simple Gradient Aggregation Strategy for Diagnosing andTreating CNN Classifiers
+## Model Doctor: A Simple Gradient Aggregation Strategy for Diagnosing and Treating CNN Classifiers
 
 ![](framework.png)
 
@@ -45,5 +45,7 @@ python preprocessing/labelme_to_mask.py
 bash scripts/train_model_doctor.sh
 ```
 
+### Tips
+As we described in the paper, the small size dataset (such as MNIST, Fashion-MNIST, CIFAR-10, CIFAR-100) is not suitable for spatial constraint, so if you want to use a small size dataset or channel constraint only, please set `beta = 0` in `scripts/train_model_doctor.sh`. 
 
 
