@@ -2,7 +2,7 @@
 
 ![](framework.png)
 
-This is a PyTorch implementation of the [Model Doctor](https://arxiv.org/pdf/2112.04934.pdf):
+This is an official PyTorch implementation of the [Model Doctor](https://arxiv.org/pdf/2112.04934.pdf):
 ```
 @article{feng2021model,
   title={Model Doctor: A Simple Gradient Aggregation Strategy for Diagnosing and Treating CNN Classifiers},
@@ -13,6 +13,21 @@ This is a PyTorch implementation of the [Model Doctor](https://arxiv.org/pdf/211
 ```
 ### Environment
 + python 3.8
+
+### Repository structure
+```
+.
+├── core                   // the core code of the paper
+├── loaders                // the data loaders of the CIFAR-10, CIFAR-100, etc
+├── metrics                // the metrics method of the model, such as accuracy
+├── models                 // various CNN models include AlexNet, VGGNet, etc
+├── preprocessing          // preprocessing the different datasets and labelme annotations
+├── scripts                // the script command to run the code
+├── utils                  // various tools include file tool, train tool
+├── test.py                // test a classification model
+├── train.py               // train a pure classification model
+└── train_model_doctor.py  // train a classification model with the model doctor
+```
 
 ### Command
 #### 1. Train a pre-trained model
