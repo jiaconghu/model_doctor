@@ -32,7 +32,7 @@ This is an official PyTorch implementation of the [Model Doctor](https://arxiv.o
 ### Command
 #### 1. Train a pre-trained model
 ```shell
-bash scripts/train.sh
+ bash scripts/train.sh
 ```
 #### 2. Prepare for channel constraints
 1. Sift high confidence images
