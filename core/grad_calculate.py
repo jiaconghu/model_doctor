@@ -25,7 +25,7 @@ class HookModule:
         self.outputs = None
         module.register_forward_hook(self._hook)
 
-    def grads(self, outputs, inputs=None, retain_graph=True, create_graph=False):
+    def grads(self, outputs, inputs=None, retain_graph=True, create_graph=True):
         if inputs is None:
             inputs = self.outputs  # default the output dim
 
